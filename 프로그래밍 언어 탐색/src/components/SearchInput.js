@@ -25,8 +25,6 @@ export default class SearchInput {
         `;
   }
 
-  
-
   async dataFetch(str) {
     const response = await fetch(`https://wr4a6p937i.execute-api.ap-northeast-2.amazonaws.com/dev/languages?keyword=+${str}`, {
       method: "GET",
